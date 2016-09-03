@@ -2,7 +2,7 @@
  
  select source.app as sourceapp, source.id as source_id, idl.method as source_method, 
 	idl.leak_path as source_app_path, sink.id as sink_id, sink.app as sinkapp,
-	fid.leak_path as sink_app_path,  fid.method as sink_method, icc_type
+	fid.leak_path as sink_app_path,  fid.sink_method, icc_type
  from SensitiveChannels 
 	inner join Applications source on 
 		SensitiveChannels.fromapp=source.id
