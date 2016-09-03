@@ -13,7 +13,7 @@ DECLARE finished,finished1 INTEGER DEFAULT 0;
 
 declare intent_category,intent_match INT DEFAULT 0;
 
-DECLARE intent_cursor CURSOR for SELECT category from ICategories where intent_id=intent;
+DECLARE intent_cursor CURSOR for SELECT category from IntentCategories where intent_id=intent;
 DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
 
 
