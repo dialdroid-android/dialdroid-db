@@ -1,5 +1,5 @@
 -- --------------------------------------------------------------------------------
--- Routine calculatedataleak
+-- Routine calculatAllICCLinks
 -- Note: comments before and after the routine body will not be stored by the server
 -- --------------------------------------------------------------------------------
 DELIMITER $$
