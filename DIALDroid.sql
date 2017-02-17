@@ -361,6 +361,8 @@ CREATE TABLE `Applications` (
   `version` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
+ALTER TABLE `Applications` ADD `shasum` VARCHAR(100) NULL DEFAULT NULL AFTER `app`;
+
 -- --------------------------------------------------------
 
 --
@@ -869,6 +871,8 @@ ALTER TABLE `AppCategories`
 --
 ALTER TABLE `Applications`
   ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `Applications` ADD INDEX(`shasum`);
 
 --
 -- Indexes for table `AppTimeout`
